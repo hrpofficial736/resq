@@ -56,7 +56,13 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-
+  fonts:
+    - family: Ubuntu
+      fonts:
+        - asset: ./lib/resources/fonts/Ubuntu/Ubuntu-Bold.ttf
+        - asset: ./lib/resources/fonts/Ubuntu/Ubuntu-Light.ttf
+        - asset: ./lib/resources/fonts/Ubuntu/Ubuntu-Medium.ttf
+        - asset: ./lib/resources/fonts/Ubuntu/Ubuntu-Regular.ttf
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
