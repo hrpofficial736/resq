@@ -63,6 +63,10 @@ flutter:
         - asset: ./lib/resources/fonts/Ubuntu/Ubuntu-Light.ttf
         - asset: ./lib/resources/fonts/Ubuntu/Ubuntu-Medium.ttf
         - asset: ./lib/resources/fonts/Ubuntu/Ubuntu-Regular.ttf
+
+    - family: Poppins
+      fonts:
+        - asset: ./lib/resources/fonts/Poppins/Poppins-Bold.ttf
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

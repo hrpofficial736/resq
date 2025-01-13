@@ -15,7 +15,7 @@ class Header extends StatelessWidget {
               Border.all(width: 2, color: AppColorScheme().primaryTextColor),
           borderRadius: BorderRadius.all(Radius.circular(20))),
       child: Row(
-        spacing: 130,
+        spacing: 150,
         children: [
           Column(crossAxisAlignment: CrossAxisAlignment.start, spacing: 10,
             children: [
