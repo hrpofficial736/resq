@@ -15,7 +15,7 @@ class Header extends StatelessWidget {
               Border.all(width: 2, color: AppColorScheme().primaryTextColor),
           borderRadius: BorderRadius.all(Radius.circular(20))),
       child: Row(
-        spacing: 150,
+        spacing: 170,
         children: [
           Column(crossAxisAlignment: CrossAxisAlignment.start, spacing: 10,
             children: [
@@ -35,20 +35,13 @@ class Header extends StatelessWidget {
               )
             ],
           ),
-          Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-              Text(
-                "25 C",
-                style: TextStyle(
-                    fontFamily: "Ubuntu",
-                    color: AppColorScheme().primaryTextColor,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 15),
-              ),
+          Column(mainAxisAlignment: MainAxisAlignment.start, children: [
+              Icon(Icons.cloud, size: 50, color: AppColorScheme().primaryTextColor),
               Text("Haze", style: TextStyle(
                     fontFamily: "Ubuntu",
                     color: AppColorScheme().primaryTextColor,
                     fontWeight: FontWeight.w600,
-                    fontSize: 12),
+                    fontSize: 18),
               )])
         ],
       ),

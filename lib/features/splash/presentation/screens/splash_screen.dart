@@ -10,9 +10,9 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 3), () {
-      Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen()));
-    });
+    // Future.delayed(Duration(seconds: 3), () {
+    //   Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen()));
+    // });
     return Scaffold(
         backgroundColor: AppColorScheme().primaryBackgroundColor,
         body: Center(

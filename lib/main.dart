@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:resq/features/alerts/presentation/screens/alerts.dart';
+import 'package:resq/features/home/presentation/screens/home_screen.dart';
 import 'features/splash/presentation/screens/splash_screen.dart';
 
 void main() {
@@ -13,7 +15,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: SplashPage(),
+      routes: {
+        '/': (context) => HomeScreen(),
+        '/alerts': (context) => const Alerts(),
+      },
     );
   }
 }
