@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:resq/core/constants/color_scheme.dart';
-import 'package:resq/core/widgets/app_bar.dart';
-import 'package:resq/core/widgets/bottom_navbar.dart';
 import 'package:resq/core/widgets/drop_down.dart';
+import 'package:resq/core/widgets/media_uploader.dart';
+import 'package:resq/core/widgets/resq_elevated_button.dart';
 import 'package:resq/core/widgets/text_field.dart';
 
 class ReportScreen extends StatefulWidget {
@@ -18,11 +18,9 @@ class _ReportScreenState extends State<ReportScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: AppColorScheme().primaryBackgroundColor,
-        appBar: PreferredSize(
-            preferredSize: const Size.fromHeight(60.0), child: ResqAppBar()),
-        bottomNavigationBar: BottomNavbar(),
+        
         body: Padding(
-            padding: EdgeInsets.all(20),
+            padding: EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 5),
             child: Form(
                 child: SingleChildScrollView(
                     child: Column(
@@ -35,8 +33,11 @@ class _ReportScreenState extends State<ReportScreen> {
                           fontSize: 25,
                           fontWeight: FontWeight.w800,
                           color: AppColorScheme().primaryTextColor)),
-                  const SizedBox(height: 10),
-                  ResqTextField(hintText: "Name", labelText: "Your Name"),
+                  ResqTextField(
+                    hintText: "Name",
+                    labelText: "Your Name",
+                    maxLines: 1,
+                  ),
                   ResqDropDown(
                       selectedValue: dropDownCurrentValue,
                       onChanged: (value) {
@@ -44,10 +45,15 @@ class _ReportScreenState extends State<ReportScreen> {
                           dropDownCurrentValue = value;
                         });
                       }),
+                  ResqTextField(icon: Icon(Icons.location_on),
+                      hintText: "Location", labelText: "Location", maxLines: 1),
                   ResqTextField(
-                      hintText: "Description",
-                      labelText: "Incident Description"),
-                  ResqTextField(hintText: "Name", labelText: "Your Name")
+                    hintText: "Description",
+                    labelText: "Incident Description",
+                    maxLines: 5,
+                  ),
+                      MediaUploader(),
+                  ResqElevatedButton(text: "Submit")
                 ])))));
   }
 }

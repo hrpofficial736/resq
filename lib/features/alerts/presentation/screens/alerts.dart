@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:resq/core/constants/color_scheme.dart';
-import 'package:resq/core/widgets/app_bar.dart';
-import 'package:resq/core/widgets/bottom_navbar.dart';
 
 class Alerts extends StatefulWidget {
   const Alerts({super.key});
@@ -15,8 +13,7 @@ class _AlertsState extends State<Alerts> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColorScheme().primaryBackgroundColor,
-      appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(60.0), child: ResqAppBar()),
+      
       body: SingleChildScrollView(
         child: Padding(padding: const EdgeInsets.symmetric(horizontal: 20), child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -52,6 +49,6 @@ class _AlertsState extends State<Alerts> {
           ],
         ),
       ),
-    ), bottomNavigationBar: BottomNavbar(),);
+    ));
   }
 }

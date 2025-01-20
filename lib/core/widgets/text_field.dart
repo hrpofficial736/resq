@@ -5,13 +5,18 @@ class ResqTextField extends StatelessWidget {
   final TextEditingController _controller = TextEditingController();
   String? hintText;
   String? labelText;
-  ResqTextField({super.key, required this.hintText, required this.labelText});
+  int? maxLines;
+  Icon? icon;
+  ResqTextField({super.key, required this.hintText, required this.labelText, required this.maxLines, this.icon});
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      maxLines: maxLines,
         cursorColor: AppColorScheme().primaryTextColor,
         controller: _controller,
         decoration: InputDecoration(
+          prefixIcon: icon,
+          alignLabelWithHint: true,
             hintText: hintText,
             hintStyle: TextStyle(
                 color: AppColorScheme().dividerColor, fontFamily: "Ubuntu"),
