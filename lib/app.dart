@@ -5,6 +5,7 @@ import 'package:resq/core/widgets/bottom_navbar.dart';
 import 'package:resq/features/alerts/presentation/screens/alerts.dart';
 import 'package:resq/features/home/presentation/screens/home_screen.dart';
 import 'package:resq/features/report/presentation/screens/report_screen.dart';
+import 'package:resq/features/shelters/presentation/screens/shelters_screen.dart';
 
 class ResqApp extends StatefulWidget {
   const ResqApp({super.key});
@@ -18,7 +19,8 @@ class _ResqAppState extends State<ResqApp> {
   final List<Widget> _screens = [
     HomeScreen(),
     Alerts(),
-    ReportScreen()
+    ReportScreen(),
+    SheltersScreen()
   ];
   @override
   Widget build(BuildContext context) {
