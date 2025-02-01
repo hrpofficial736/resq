@@ -5,7 +5,6 @@ class FetchWeatherFromApi {
   final WeatherFactory weatherFactory = WeatherFactory(AppSecrets().weatherApiKey);
   Future<Map<String, dynamic>?> fetchWeather (double latitude, double longitude) async {
     final Weather response = await weatherFactory.currentWeatherByLocation(latitude, longitude);
-    print(response);
     return response.toJson();
   }
 }

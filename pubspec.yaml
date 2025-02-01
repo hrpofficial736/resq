@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.17
   flutter_riverpod: ^2.6.1
   dotted_border: ^2.1.0
   file_picker: ^8.1.7
@@ -65,17 +66,26 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets: 
+  - lib/assets/icons/temperature.svg
+  - lib/assets/icons/feels_like.svg
+  - lib/assets/icons/humidity.svg
+  - lib/assets/icons/wind_speed.svg
+  - lib/assets/icons/aqi.svg
+  - lib/assets/icons/co.svg
+  - lib/assets/icons/pm25.svg
+  - lib/assets/icons/pm10.svg
   fonts:
     - family: Ubuntu
       fonts:
-        - asset: ./lib/resources/fonts/Ubuntu/Ubuntu-Bold.ttf
-        - asset: ./lib/resources/fonts/Ubuntu/Ubuntu-Light.ttf
-        - asset: ./lib/resources/fonts/Ubuntu/Ubuntu-Medium.ttf
-        - asset: ./lib/resources/fonts/Ubuntu/Ubuntu-Regular.ttf
+        - asset: ./lib/assets/fonts/Ubuntu/Ubuntu-Bold.ttf
+        - asset: ./lib/assets/fonts/Ubuntu/Ubuntu-Light.ttf
+        - asset: ./lib/assets/fonts/Ubuntu/Ubuntu-Medium.ttf
+        - asset: ./lib/assets/fonts/Ubuntu/Ubuntu-Regular.ttf
 
     - family: Poppins
       fonts:
-        - asset: ./lib/resources/fonts/Poppins/Poppins-Bold.ttf
+        - asset: ./lib/assets/fonts/Poppins/Poppins-Bold.ttf
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
