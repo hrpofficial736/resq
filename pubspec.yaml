@@ -44,6 +44,7 @@ dependencies:
   flutter_map: ^7.0.2
   latlong2: ^0.9.1
   dio: ^5.7.0
+  awesome_snackbar_content: ^0.1.5
 
 dev_dependencies:
   flutter_test:
@@ -75,6 +76,11 @@ flutter:
   - lib/assets/icons/co.svg
   - lib/assets/icons/pm25.svg
   - lib/assets/icons/pm10.svg
+  - lib/assets/icons/calm.svg
+  - lib/assets/icons/alerts.svg
+  - lib/assets/icons/kit.svg
+  - lib/assets/icons/location.svg
+  - lib/assets/icons/communication.svg
   fonts:
     - family: Ubuntu
       fonts:

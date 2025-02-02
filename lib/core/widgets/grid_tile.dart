@@ -24,7 +24,7 @@ class CustomGridTile extends StatelessWidget {
               spacing: 7.0,
               children: [
                 const SizedBox(height: 10),
-                icon ?? const SizedBox(),
+                icon,
                 Text(
                   data,
                   style: TextStyle(

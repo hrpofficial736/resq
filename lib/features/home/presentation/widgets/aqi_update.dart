@@ -71,6 +71,7 @@ class _AqiUpdateState extends State<AqiUpdate> {
                                 "lib/assets/icons/pm25.svg",
                                 width: 40,
                                 height: 40,
+                                colorFilter: ColorFilter.mode(AppColorScheme().primaryTextColor, BlendMode.srcIn),
                               ),
                               data: "${widget.aqiData.pm_25}"),
                           CustomGridTile(
@@ -79,6 +80,9 @@ class _AqiUpdateState extends State<AqiUpdate> {
                                 "lib/assets/icons/pm10.svg",
                                 width: 40,
                                 height: 40,
+                                colorFilter: ColorFilter.mode(
+                                      AppColorScheme().primaryTextColor,
+                                      BlendMode.srcIn)
                               ),
                               data: "${widget.aqiData.pm_10}")
                         ],
