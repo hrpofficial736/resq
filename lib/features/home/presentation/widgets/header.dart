@@ -13,10 +13,7 @@ class Header extends StatelessWidget {
       height: 100,
       margin: EdgeInsets.only(top: 20),
       padding: EdgeInsets.all(10),
-      decoration: BoxDecoration(
-          border:
-              Border.all(width: 2, color: AppColorScheme().primaryTextColor),
-          borderRadius: BorderRadius.all(Radius.circular(20))),
+      
       child: Row(
         spacing: 140,
         children: [

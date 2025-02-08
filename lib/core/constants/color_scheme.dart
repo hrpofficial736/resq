@@ -15,7 +15,8 @@ class AppColorScheme {
   // Status Colors
   final Color successIndicatorColor = Color(0xFF4CAF50);
   final Color warningIndicatorColor = Color(0xFFF44336);
-
+  final Color coldAlertColor = Color(0xFF00FFFF);
+  final Color heatAlertColor = Color(0xFFFFEB3B);
 
   // Text Colors 
   final Color primaryTextColor = Color(0xFFE0E0E0);

@@ -14,13 +14,10 @@ class SafetyTipsWidget extends StatefulWidget {
 class _SafetyTipsWidgetState extends State<SafetyTipsWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
         width: 400,
         height: 400,
-        decoration: BoxDecoration(
-            border:
-                Border.all(width: 2, color: AppColorScheme().primaryTextColor),
-            borderRadius: BorderRadius.all(Radius.circular(20))),
+        
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 15.0),
           child: Column(

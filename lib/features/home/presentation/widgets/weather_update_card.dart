@@ -15,13 +15,10 @@ class WeatherUpdate extends StatefulWidget {
 class _WeatherUpdateState extends State<WeatherUpdate> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
         width: double.infinity,
         height: 400,
-        decoration: BoxDecoration(
-            border:
-                Border.all(width: 2, color: AppColorScheme().primaryTextColor),
-            borderRadius: BorderRadius.all(Radius.circular(20))),
+        
         child: Padding(
           padding: EdgeInsets.all(15),
           child: Column(
