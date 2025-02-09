@@ -11,6 +11,5 @@ class EmergencyContacts {
     EmergencyContactModel(label: "Women's Helpline", number: "1091"),
     EmergencyContactModel(label: "Child Helpline", number: "1098"),
     EmergencyContactModel(label: "Highway Helpline", number: "1033"),
-    EmergencyContactModel(label: "Mental Health Support", number: "1860 266 2345"),
   ];
 }

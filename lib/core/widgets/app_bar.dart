@@ -13,14 +13,6 @@ class ResqAppBar extends StatelessWidget {
       shadowColor: AppColorScheme().primaryTextColor,
       leading: ResqLogo(),
       leadingWidth: 115,
-      actions: [
-        Padding(
-            padding: EdgeInsets.only(right: 10),
-            child: Icon(
-              Icons.settings,
-              color: AppColorScheme().primaryTextColor,
-            ))
-      ],
     );
   }
 }

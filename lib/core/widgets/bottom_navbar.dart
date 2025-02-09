@@ -38,9 +38,9 @@ class _BottomNavbarState extends State<BottomNavbar> {
         )),
     BottomNavigationBarItem(
         backgroundColor: AppColorScheme().primaryBackgroundColor,
-        label: "Settings",
+        label: "Emergency Contacts",
         icon: Icon(
-          Icons.settings,
+          Icons.sos,
         ))
   ];
   @override

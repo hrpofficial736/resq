@@ -3,6 +3,7 @@ import 'package:resq/core/constants/color_scheme.dart';
 import 'package:resq/core/widgets/app_bar.dart';
 import 'package:resq/core/widgets/bottom_navbar.dart';
 import 'package:resq/features/alerts/presentation/screens/alerts.dart';
+import 'package:resq/features/emergency/presentation/screens/emergency_contacts_screen.dart';
 import 'package:resq/features/home/presentation/screens/home_screen.dart';
 import 'package:resq/features/report/presentation/screens/report_screen.dart';
 import 'package:resq/features/shelters/presentation/screens/shelters_screen.dart';
@@ -20,7 +21,8 @@ class _ResqAppState extends State<ResqApp> {
     HomeScreen(),
     Alerts(),
     ReportScreen(),
-    SheltersScreen()
+    SheltersScreen(),
+    EmergencyContactsScreen()
   ];
   @override
   Widget build(BuildContext context) {

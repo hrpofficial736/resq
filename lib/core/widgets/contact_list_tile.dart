@@ -8,7 +8,8 @@ class ContactListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
+    return Padding(padding: EdgeInsets.only(bottom: 10.0), child: ListTile(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
       tileColor: AppColorScheme().containerColor,
       leading: Text(
         contact.label!,
@@ -22,6 +23,6 @@ class ContactListTile extends StatelessWidget {
               color: AppColorScheme().primaryTextColor,
               fontFamily: "Poppins",
               fontSize: 18.0)),
-    );
+    ));
   }
 }
