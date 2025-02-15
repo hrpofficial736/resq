@@ -4,12 +4,14 @@ import 'package:resq/core/constants/color_scheme.dart';
 class ResqElevatedButton extends StatelessWidget {
   Icon? icon;
   String? text;
-  ResqElevatedButton({super.key, this.icon, required this.text});
+  Function onPressed;
+  ResqElevatedButton({super.key, this.icon, required this.text, required this.onPressed});
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      
-        onPressed: () {},
+        onPressed: () {
+          onPressed();
+        },
         style: ElevatedButton.styleFrom(
           fixedSize: Size.infinite,
           backgroundColor: AppColorScheme().primaryTextColor,

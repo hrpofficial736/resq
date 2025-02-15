@@ -6,15 +6,21 @@ class ResqTextField extends StatelessWidget {
   String? hintText;
   String? labelText;
   int? maxLines;
+  Function getValue;
   Icon? icon;
-  ResqTextField({super.key, required this.hintText, required this.labelText, required this.maxLines, this.icon});
+  ResqTextField({super.key, required this.hintText, required this.labelText, required this.maxLines, this.icon, required this.getValue});
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      onChanged: (String newText) {
+        getValue(newText);
+      },
+      style: TextStyle(color: AppColorScheme().primaryTextColor, fontFamily: "Poppins"),
       maxLines: maxLines,
         cursorColor: AppColorScheme().primaryTextColor,
         controller: _controller,
         decoration: InputDecoration(
+          
           prefixIcon: icon,
           alignLabelWithHint: true,
             hintText: hintText,

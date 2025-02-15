@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:resq/core/constants/color_scheme.dart';
 import 'package:resq/features/shelters/presentation/widgets/maps_widget.dart';
+import 'package:resq/features/shelters/presentation/widgets/shelter_signs.dart';
 
 class SheltersScreen extends StatefulWidget {
   const SheltersScreen({super.key});
@@ -19,7 +20,8 @@ class _SheltersScreenState extends State<SheltersScreen> {
                           fontSize: 25,
                           fontWeight: FontWeight.w800,
                           color: AppColorScheme().primaryTextColor)),
-                          MapsWidget()
+                          MapsWidget(),
+                          ShelterSigns()
       ],
     )));
   }
