@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:resq/core/constants/color_scheme.dart';
+import 'package:resq/core/constants/emergency_contacts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SosButton extends StatefulWidget {
   double radius;
@@ -66,9 +68,13 @@ class _SosButtonState extends State<SosButton> with SingleTickerProviderStateMix
                 padding: EdgeInsets.all(widget.radius), // Adjust size
                 elevation: 0, // Remove shadow of ElevatedButton
               ),
-              onPressed: () {
-                // Define the SOS action
-                print("SOS button pressed!");
+              onPressed: () async {
+                final Uri phoneNumber = Uri.parse('tel:${EmergencyContacts().contacts[0].number}');
+                if (await canLaunchUrl(phoneNumber)) {
+                  await launchUrl(phoneNumber);
+                } else {
+                  throw 'Could not launch $phoneNumber';
+                }
               },
               child: Text(
                 "SOS",

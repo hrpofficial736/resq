@@ -113,19 +113,11 @@ class _ReportScreenState extends State<ReportScreen> {
                           report.location.isNotEmpty &&
                           report.description.isNotEmpty &&
                           report.image != null) {
-                        print(report.reporterName);
-                        print(report.incidentType);
-                        print(report.description);
-                        print(report.image);
-                        print(report.location);
+                        
                         ScaffoldMessenger.of(context)
                             .showSnackBar(successSnackBar);
                       } else {
-                        print(report.reporterName);
-                        print(report.incidentType);
-                        print(report.description);
-                        print(report.image);
-                        print(report.location);
+                        
                         ScaffoldMessenger.of(context)
                             .showSnackBar(failureSnackBar);
                       }
